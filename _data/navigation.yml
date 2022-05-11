@@ -1,4 +1,6 @@
 - title: About
   url: about
-- title: Documentation
-  url: docs
+- title: News
+  url: news
+- title: DSN Library
+  url: docs/library

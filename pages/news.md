@@ -23,4 +23,8 @@ For site changes, see the <a href="https://github.com/{{ site.github_user }}/{{ 
    <hr>
 {% endfor %}
 
-Want to see more? See the <a href="{{ site.baseurl }}/archive/">News Archive</a>.
+{% if site.posts.size > 10 %}
+There's more! See the <a href="{{ site.baseurl }}/archive/">News Archive</a>.
+{% else %}
+For all our updates, see the <a href="{{ site.baseurl }}/archive/">News Archive</a>.
+{% endif %}

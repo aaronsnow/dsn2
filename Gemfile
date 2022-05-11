@@ -23,4 +23,8 @@ gem "github-pages", group: :jekyll_plugins
 #   gem "jekyll-github-metadata", "~> 1.0"
 # end
 
+group :jekyll_plugins do
+  gem 'jekyll-optional-front-matter'
+end
+
 gem "webrick", "~> 1.7"

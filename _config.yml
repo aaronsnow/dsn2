@@ -14,33 +14,42 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Docsy Jekyll
-email: your-email@domain.com
-author: Dinosaur Avocado
+title: The Digital Service Network
+email: aaron.snow@georgetown.edu
+author: Aaron Snow
 description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  Homepage of the Government Digital Service Network, 
+  a partnership between 
+  the Beeck Center for Social Impact and Innovation at Georgetown University 
+  and US Digital Response.
 
 # Add your baseurl here (your repository) but DO NOT CHANGE THE LINE NUMBER without editing .circleci/circle_urls.sh
-baseurl: "/docsy-jekyll" # the subpath of your site, e.g. /blog
+baseurl: ""
+# baseurl: "/"
+# baseurl: "/dsn2"
+# baseurl: "/docsy-jekyll" # the subpath of your site, e.g. /blog
 
 # This is mostly for testing
-url: "https://vsoch.github.io" # the base hostname & protocol for your site
+# url: "https://vsoch.github.io" # the base hostname & protocol for your site
+# url: "https://aaronsnow.net" # the base hostname & protocol for your site
+# url: "https://localhost:4000"
 
 # Social (First three Required)
-repo: "https://github.com/vsoch/docsy-jekyll"
-github_user: "vsoch"
-github_repo: "docsy-jekyll"
+repo: "https://github.com/aaronsnow/dsn2"
+github_user: "aaronsnow"
+github_repo: "dsn2"
 github_branch: "master"
 
 # Optional
-twitter: vsoch
-linkedin: vsochat
-dockerhub: vanessa
+twitter: beeckcenter
+# linkedin: 
+# dockerhub: 
 
 # Should there be feedback buttons at the bottom of pages?
-feedback: true
+feedback: false
+
+# Excerpt separator?
+excerpt_separator: <!--more-->
 
 # Link to a privacy policy in footer, uncomment and define if wanted
 # privacy: https://domain.com/privacy
@@ -77,6 +86,11 @@ collections:
 
 # Defaults
 defaults:
+  - scope:
+      path: "_docs/job-descriptions"
+    values:
+      title: ""
+      category: "job description"
   - scope:
       path: "_docs"
       type: "docs"
