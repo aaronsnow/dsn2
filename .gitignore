@@ -2,3 +2,5 @@ vendor
 _site
 Gemfile.lock
 _tmp
+.tmp
+tmp

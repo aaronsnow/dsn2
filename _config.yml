@@ -76,7 +76,7 @@ fixedNav: 'true' # true or false
 
 permalink: /:year/:title/
 markdown: kramdown
-exclude: [_site, CHANGELOG.md, LICENSE, README.md, vendor]
+exclude: [_site, CHANGELOG.md, LICENSE, README.md, vendor, tmp, .tmp]
 
 # Collections
 collections:
@@ -86,6 +86,10 @@ collections:
 
 # Defaults
 defaults:
+  - scope:
+      path: "/pages"
+    values:
+      redirect_to: "/"
   - scope:
       path: "_docs/job-descriptions"
     values:

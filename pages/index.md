@@ -12,7 +12,7 @@ permalink: /
 ... _Insert blurb about who can join, why you'd want to, and how to [sign up to join our listserv / network](https://airtable.com/shrltywvcMrfvKbpN)_
 
 ## Library
-Check out the [DSN Library](/docs/library). We have job descriptions!
+Check out the [DSN Library](/library). We have job descriptions!
 
 {% assign latest = site.posts.first %}
    <!-- <div class="post-preview"> -->

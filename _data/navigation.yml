@@ -2,5 +2,5 @@
   url: about
 - title: News
   url: news
-- title: DSN Library
-  url: docs/library
+- title: Library
+  url: library
